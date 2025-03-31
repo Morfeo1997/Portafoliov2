@@ -4,33 +4,33 @@ import SimpleImage2 from '../../assets/images/project-images/simple-projects/pro
 import SimpleImage3 from '../../assets/images/project-images/simple-projects/project-3.jpg'
 
 import IntermediumImage1 from '../../assets/images/project-images/intermedium-projects/project-1.jpg'
-import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/'
-import IntermediumImage3 from '../../assets/images/project-images/intermedium-projects/'
+import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/project-2.jpg'
+import IntermediumImage3 from '../../assets/images/project-images/intermedium-projects/project-3.jpg' 
 
 
 
 
 
 const Projects = () => {
-  // Placeholder projects data - to be replaced later
+  
   const simpleProjects = [
     {
       title: "Calculadora",
       image: SimpleImage1,
       tools: ["HTML", "CSS", "JavaScript"],
-      link: "#"
+      link: "https://morfeo1997-calculator.netlify.app/"
     },
     {
       title: "Maquina de Aforismos",
       image: SimpleImage2,
       tools: ["HTML", "CSS", "JavaScript", "React"],
-      link: "#"
+      link: "https://el-metodo-pascal-morfeo1997.netlify.app/"
     },
     {
       title: "Landing Page",
       image: SimpleImage3,
       tools: ["HTML", "CSS"],
-      link: "#"
+      link: "https://huddle-landing-page-morfeo1997.netlify.app/"
     }
   ];
 
@@ -38,20 +38,20 @@ const Projects = () => {
     {
       title: "E-commerce",
       image: IntermediumImage1,
-      tools: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      tools: ["HTML", "CSS", "Javascript"],
+      link: "https://morfeo1997-e-commerce.netlify.app/"
     },
     {
-      title: "Blog Personal",
-      image: "https://placehold.co/400x300/png",
-      tools: ["React", "Firebase", "Tailwind"],
-      link: "#"
+      title: "Wallex (app tipo fintech)",
+      image: IntermediumImage2,
+      tools: ["React", "Tailwind", "Springboot"],
+      link: "https://github.com/No-Country-simulation/s21-02-ft-webapp"
     },
     {
-      title: "Dashboard",
-      image: "https://placehold.co/400x300/png",
-      tools: ["React", "Redux", "Material-UI"],
-      link: "#"
+      title: "Playclass",
+      image: IntermediumImage3,
+      tools: ["React", "Tailwind"],
+      link: "https://github.com/No-Country-simulation/s19-13-ft-webapp/tree/dev"
     }
   ];
 
