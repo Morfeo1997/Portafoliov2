@@ -2,6 +2,8 @@ import ProjectCard from './projectCard';
 import SimpleImage1 from '../../assets/images/project-images/simple-projects/project-1.jpg'
 import SimpleImage2 from '../../assets/images/project-images/simple-projects/project-2.jpg'
 import SimpleImage3 from '../../assets/images/project-images/simple-projects/project-3.jpg'
+import SimpleImage4 from '../../assets/images/project-images/simple-projects/project-4.jpg'
+import SimpleImage5 from '../../assets/images/project-images/simple-projects/project-5.jpg'
 
 import IntermediumImage1 from '../../assets/images/project-images/intermedium-projects/project-1.jpg'
 import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/project-2.jpg'
@@ -31,6 +33,18 @@ const Projects = () => {
       image: SimpleImage3,
       tools: ["HTML", "CSS"],
       link: "https://huddle-landing-page-morfeo1997.netlify.app/"
+    },
+        {
+      title: "TODO App (with dark mode)",
+      image: SimpleImage4,
+      tools: ["HTML", "Javascript", "React", "Tailwindcss"],
+      link: "https://f-e-m-todo-app.netlify.app/"
+    },
+            {
+      title: "Rock Paper Scissors (with 2 difficults) app",
+      image: SimpleImage5,
+      tools: ["HTML", "Javascript", "React", "Tailwindcss"],
+      link: "https://rock-paper-scissor-morfeo1997.netlify.app/"
     }
   ];
 
