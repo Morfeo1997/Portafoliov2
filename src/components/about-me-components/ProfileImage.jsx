@@ -5,15 +5,17 @@ import Img3 from '../../assets/images/profile-images/profile-3.png'
 import Img4 from '../../assets/images/profile-images/profile-4.png'
 import Img5 from '../../assets/images/profile-images/profile-5.png'
 import Img6 from '../../assets/images/profile-images/profile-6.png'
+import Img7 from '../../assets/images/profile-images/profile-7.png'
 
 
 const ProfileImage = () => {
   
   const images = [
-    Img6,
+    Img7,
     Img2,
     Img3,
     Img4,
+    Img6,
     Img5,
     Img1,
   ];
@@ -34,7 +36,7 @@ const ProfileImage = () => {
       <img
         src={images[currentImageIndex]}
         alt="Profile"
-        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
       />
     </div>
   );
