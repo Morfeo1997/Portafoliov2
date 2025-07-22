@@ -8,6 +8,7 @@ import SimpleImage5 from '../../assets/images/project-images/simple-projects/pro
 import IntermediumImage1 from '../../assets/images/project-images/intermedium-projects/project-1.jpg'
 import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/project-2.jpg'
 import IntermediumImage3 from '../../assets/images/project-images/intermedium-projects/project-3.jpg' 
+import IntermediumImage4 from '../../assets/images/project-images/intermedium-projects/project-4.jpg' 
 
 
 
@@ -66,6 +67,12 @@ const Projects = () => {
       image: IntermediumImage3,
       tools: ["React", "Tailwind"],
       link: "https://github.com/No-Country-simulation/s19-13-ft-webapp/tree/dev"
+    },
+        {
+      title: "REST-API-Countries",
+      image: IntermediumImage4,
+      tools: ["React", "Tailwind"],
+      link: "https://fm-rest-country.netlify.app/"
     }
   ];
 
