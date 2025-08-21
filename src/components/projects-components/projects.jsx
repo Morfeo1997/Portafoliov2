@@ -9,6 +9,7 @@ import IntermediumImage1 from '../../assets/images/project-images/intermedium-pr
 import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/project-2.jpg'
 import IntermediumImage3 from '../../assets/images/project-images/intermedium-projects/project-3.jpg' 
 import IntermediumImage4 from '../../assets/images/project-images/intermedium-projects/project-4.jpg' 
+import IntermediumImage5 from '../../assets/images/project-images/intermedium-projects/project-5.jpg' 
 
 
 
@@ -73,6 +74,12 @@ const Projects = () => {
       image: IntermediumImage4,
       tools: ["React", "Tailwind"],
       link: "https://fm-rest-country.netlify.app/"
+    },
+    {
+      title: "10 Preguntas",
+      image: IntermediumImage5,
+      tools: ["React", "Tailwind"],
+      link: "https://10-preguntas.netlify.app/"
     }
   ];
 
