@@ -17,7 +17,7 @@ const AboutMe = () => {
     },
     {
       question: "¿Que metas tienes?",
-      answer: "Planeo dedicarme durante varios años al desarrollo web para mejorar mis habilidades en la programacion y asi en un futuro poder realizar proyectos propios y vivir de esto."
+      answer: "Planeo dedicarme durante varios años al desarrollo web, es un area que realmente he llegado a disfrutar y que poder seguir haciendo proyectos me hace sentir bien."
     },
     {
       question: "¿Que nivel de Ingles manejas?",
@@ -25,11 +25,34 @@ const AboutMe = () => {
     },
     {
       question: "¿Tienes problemas trabajando con otros?",
-      answer: "He estado en 3 simulaciones, gracias a la empresa de No Country y en todas me ha tocado trabajar en equipo, Nunca he tenido problemas con nadie, de hecho me gusta bastante, porque gracias a eso he podido aprender de otros trabajadores y mejorar."
+      answer: "He estado en varias simulaciones, gracias a la empresa de No Country y en una hackaton, en todas me ha tocado trabajar en equipo, Nunca he tenido problemas con nadie, de hecho me gusta bastante, porque gracias a eso he podido aprender de otros trabajadores y mejorar."
     },
     {
       question: "¿Donde aprendiste a programar?",
       answer: "Comence con una aplicacion (ya extinta) de google llamada Grasshooper que daba teoria y problemas en Javascript, por otro lado consegui mi principal conocimiento vino de FreeCodeCamp, Sololearn y Codewars. Hoy por hoy aprendo mas leyendo documentación y codigo de otros compañeros."
+    }
+  ];
+
+  const faqsEn = [
+      {
+      question: "How long have you been studying",
+      answer: "I started at the beginning of 2021. I took a few breaks to look for work in other areas, but I always kept studying."
+    },
+    {
+      question: "¿Which are your goals?",
+      answer: "I plan to devote myself to web development for several years. It's an area that I've really come to enjoy, and being able to continue working on projects makes me feel good."
+    },
+    {
+      question: "¿What's your english level?",
+      answer: "I currently have a C2 level (71/100) in English according to the EFSET certificate."
+    },
+    {
+      question: "¿Do you have any problem working with others?",
+      answer: "I have participated in several simulations, thanks to the No Country company and in a hackathon, and in all of them I have had to work in a team. I have never had any problems with anyone; in fact, I quite like it, because thanks to that I have been able to learn from other workers and improve."
+    },
+    {
+      question: "Where did you learn to coding?",
+      answer: "I started with a (now defunct) Google app called Grasshopper that provided theory and problems in JavaScript. On the other hand, I gained most of my knowledge from FreeCodeCamp, Sololearn, and Codewars. Today, I learn more by reading documentation and code from other colleagues."
     }
   ];
 

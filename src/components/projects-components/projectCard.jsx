@@ -78,7 +78,7 @@ const ProjectCard = ({ title, image, tools, link }) => {
                   e.stopPropagation();
                   setIsFlipped(false);
                 }}
-                className="bg-gray-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-700 transition-colors duration-300"
+                className="bg-gray-600 cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-700 transition-colors duration-300"
               >
                 ← Volver
               </button>
