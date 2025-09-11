@@ -9,16 +9,64 @@ import GitIcon from '../../assets/icons/git.svg'
 import GithubIcon from '../../assets/icons/github.svg'
 
 const Skills = () => {
-  // Placeholder skills data - to be replaced later
+  // Skills data con nuevo sistema de niveles (1-5)
   const skills = [
-    { name: 'React', level: 90, icon: ReactIcon },
-    { name: 'JavaScript', level: 85, icon: JavascriptIcon },
-    { name: 'HTML5', level: 95, icon: Html5Icon },
-    { name: 'CSS3', level: 88, icon: Css3Icon },
-    { name: 'Tailwind', level: 80, icon: TailwindIcon },
-    { name: 'Python', level: 70, icon: PythonIcon },
-    { name: 'Git', level: 85, icon: GitIcon },
-    { name: 'Github', level: 70, icon: GithubIcon },
+    { 
+      name: 'React', 
+      level: 4, // Avanzado
+      icon: ReactIcon,
+      description: 'Desarrollo de aplicaciones web modernas con componentes reutilizables y gestión de estado.',
+      experience: '2+ años'
+    },
+    { 
+      name: 'JavaScript', 
+      level: 4, // Avanzado
+      icon: JavascriptIcon,
+      description: 'Lenguaje de programación versátil para desarrollo frontend y backend.',
+      experience: '3+ años'
+    },
+    { 
+      name: 'HTML5', 
+      level: 5, // Experto
+      icon: Html5Icon,
+      description: 'Estructuración semántica de contenido web con las últimas especificaciones.',
+      experience: '4+ años'
+    },
+    { 
+      name: 'CSS3', 
+      level: 4, // Avanzado
+      icon: Css3Icon,
+      description: 'Estilos avanzados, animaciones, flexbox, grid y diseño responsivo.',
+      experience: '3+ años'
+    },
+    { 
+      name: 'Tailwind', 
+      level: 3, // Intermedio
+      icon: TailwindIcon,
+      description: 'Framework CSS utility-first para desarrollo rápido y consistente.',
+      experience: '1+ año'
+    },
+    { 
+      name: 'Python', 
+      level: 3, // Intermedio
+      icon: PythonIcon,
+      description: 'Programación backend, automatización, análisis de datos y machine learning.',
+      experience: '2+ años'
+    },
+    { 
+      name: 'Git', 
+      level: 4, // Avanzado
+      icon: GitIcon,
+      description: 'Control de versiones, branching strategies y colaboración en equipos.',
+      experience: '2+ años'
+    },
+    { 
+      name: 'Github', 
+      level: 3, // Intermedio
+      icon: GithubIcon,
+      description: 'Gestión de repositorios, CI/CD, issues, pull requests y colaboración.',
+      experience: '2+ años'
+    },
   ];
 
   return (
@@ -27,13 +75,16 @@ const Skills = () => {
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
           Mis Habilidades
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {skills.map((skill) => (
             <SkillCard
               key={skill.name}
               name={skill.name}
               level={skill.level}
               icon={skill.icon}
+              description={skill.description}
+              experience={skill.experience}
+              
             />
           ))}
         </div>
