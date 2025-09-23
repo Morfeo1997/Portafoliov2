@@ -21,6 +21,14 @@ const Navbar = () => {
     { name: 'Contacto', href: '#contact' },
   ];
 
+  const navItemsEN = [
+    { name: 'About me', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Certificates', href: '#certifications'},
+    { name: 'Contact', href: '#contact' },
+  ];
+
   return (
     <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,6 +9,12 @@ const AboutMe = () => {
     description: "Soy un programador de nivel junior con experiencia laboral y especializado en el area Front-End",
   };
 
+  const basicInfoEn = {
+    name: "Gastón Federico Nahuel Gómez",
+    role: "Front-end Developer",
+    description: " I am a junior programmer with work experience specializing in front-end development.",
+  };
+
   // Placeholder FAQs - to be filled later
   const faqs = [
     {
