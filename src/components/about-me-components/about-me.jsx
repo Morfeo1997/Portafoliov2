@@ -4,12 +4,16 @@ import ProfileImage from './ProfileImage';
 const AboutMe = () => {
   // Placeholder data - to be replaced later
   const basicInfo = {
+    welcome: "Bienvenido!",
+    I: 'Soy',
     name: "Gastón Federico Nahuel Gómez",
     role: "Desarrollador Front-End",
     description: "Soy un programador de nivel junior con experiencia laboral y especializado en el area Front-End",
   };
 
   const basicInfoEn = {
+    welcome: 'Welcome!',
+    I: 'I am',
     name: "Gastón Federico Nahuel Gómez",
     role: "Front-end Developer",
     description: " I am a junior programmer with work experience specializing in front-end development.",
@@ -77,7 +81,8 @@ const AboutMe = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
-                ¡Hola! Soy {basicInfo.name}
+                {basicInfo.welcome} <br />
+                {basicInfo.I} {basicInfo.name}
               </h2>
               <h3 className="text-2xl text-gray-600 dark:text-gray-300">
                 {basicInfo.role}

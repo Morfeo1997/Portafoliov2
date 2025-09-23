@@ -9,6 +9,28 @@ const Contact = () => {
     setShowNotification(true);
   };
 
+  const contactText = {
+    headline: 'Contacto',
+    head1: 'Si tienes interés en contactarme para ayudarte en un proyecto',
+    head2: 'puedes llenar el formulario y yo te responderé lo más rápido que pueda.',
+    name: 'Nombre',
+    email: 'Email',
+    issue: 'Asunto',
+    message: 'Mensaje',
+    send: 'Enviar Mensaje'
+  };
+
+  const contactTextEn = {
+    headline: 'Contact',
+    head1: 'If you are interested in contacting me to help you with a project',
+    head2: "you can fill the form and I'll answer you as fast as I can.",
+    name: 'Name',
+    email: 'Email',
+    issue: 'Issue',
+    message: 'Message',
+    send: 'Send Message'
+  };
+
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,11 +38,11 @@ const Contact = () => {
           {/* Contact Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Contacto
+              {contactText.headline}
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Si tienes interés en contactarme para ayudarte en un proyecto<br />
-              puedes llenar el formulario y yo te responderé lo más rápido que pueda.
+              {contactText.head1}<br />
+              {contactText.head2}
             </p>
           </div>
 
@@ -37,13 +59,13 @@ const Contact = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Nombre
+                {contactText.name}
               </label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Nombre"
+                placeholder={contactText.name}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -55,13 +77,13 @@ const Contact = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Email
+                {contactText.email}
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder={contactText.email}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -73,13 +95,13 @@ const Contact = () => {
                 htmlFor="issue"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Asunto
+                {contactText.issue}
               </label>
               <input
                 type="text"
                 name="issue"
                 id="issue"
-                placeholder="Asunto"
+                placeholder={contactText.issue}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -91,7 +113,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                Mensaje
+                {contactText.message}
               </label>
               <textarea
                 name="message"
@@ -108,7 +130,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full px-6 py-3 rounded-lg cursor-pointer bg-blue-500 text-white font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200"
               >
-                Enviar Mensaje
+                {contactText.send}
               </button>
             </div>
 
