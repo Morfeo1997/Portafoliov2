@@ -14,6 +14,21 @@ const Certifications = () => {
         link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/javascript-algorithms-and-data-structures-v8"
       }
     ];
+
+    const certificationsEn = [
+      {
+        name: "EFSET, English Certification",
+        link: "https://cert.efset.org/zJSnSy"
+      },
+      {
+        name: "Freecodecamp, Responsive web design",
+        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/responsive-web-design"
+      },
+      {
+        name: "Freecodecamp, Javascript and data structure",
+        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/javascript-algorithms-and-data-structures-v8"
+      }
+    ];
   
     return (
       <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-900">
