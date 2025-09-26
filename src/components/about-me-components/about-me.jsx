@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import ProfileImage from './ProfileImage';
-import { useLanguage } from '../contexts/LanguageContext';
+//import { useLanguage } from '../../contexts/LanguageContext';
 
 const AboutMe = () => {
 
-	const { t } = useLanguage();
+	//const { t } = useLanguage();
   // Placeholder data - to be replaced later
   const basicInfo = {
     welcome: "Bienvenido!",
