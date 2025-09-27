@@ -1,5 +1,27 @@
 // src/contexts/LanguageContext.jsx
 import { createContext, useContext, useState, useEffect } from 'react';
+import { FiMenu, FiSun, FiMoon } from 'react-icons/fi';
+
+import ReactIcon from '../assets/icons/react.svg';
+import JavascriptIcon from '../assets/icons/javascript.svg'
+import Html5Icon from '../assets/icons/html5.svg'
+import Css3Icon from '../assets/icons/css.svg'
+import TailwindIcon from '../assets/icons/tailwindcss.png'
+import PythonIcon from '../assets/icons/python.png'
+import GitIcon from '../assets/icons/git.svg'
+import GithubIcon from '../assets/icons/github.svg'
+
+import SimpleImage1 from '../assets/images/project-images/simple-projects/project-1.jpg'
+import SimpleImage2 from '../assets/images/project-images/simple-projects/project-2.jpg'
+import SimpleImage3 from '../assets/images/project-images/simple-projects/project-3.jpg'
+import SimpleImage4 from '../assets/images/project-images/simple-projects/project-4.jpg'
+import SimpleImage5 from '../assets/images/project-images/simple-projects/project-5.jpg'
+import IntermediumImage1 from '../assets/images/project-images/intermedium-projects/project-1.jpg'
+import IntermediumImage2 from '../assets/images/project-images/intermedium-projects/project-2.jpg'
+import IntermediumImage3 from '../assets/images/project-images/intermedium-projects/project-3.jpg' 
+import IntermediumImage4 from '../assets/images/project-images/intermedium-projects/project-4.jpg' 
+import IntermediumImage5 from '../assets/images/project-images/intermedium-projects/project-5.jpg' 
+
 
 const LanguageContext = createContext();
 

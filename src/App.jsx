@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LanguageProvider } from './contexts/LanguageContext'
 import Navbar from './components/Navbar.jsx'
 import AboutMe from './components/about-me-components/about-me.jsx'
 import Skills from './components/skills-components/Skills.jsx'
@@ -11,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
       <AboutMe />
       <Skills />
@@ -19,7 +20,7 @@ function App() {
       <Certifications />
       <Contact />
       <Footer />
-    </>
+    </LanguageProvider>
   )
 }
 
