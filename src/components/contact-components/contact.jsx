@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import Notification from './Notification';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Contact = () => {
   const [showNotification, setShowNotification] = useState(false);
+
+  const { t } = useLanguage();
+
+  const contact = t('contact')
 
   const handleSubmit = (e) => {
     {/* Manejo del envio de notificaciones */}
@@ -38,11 +43,11 @@ const Contact = () => {
           {/* Contact Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              {contactText.headline}
+              {t('contact.headline')}
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              {contactText.head1}<br />
-              {contactText.head2}
+              {t('contact.head1')}<br />
+              {t('contact.head2')}
             </p>
           </div>
 
@@ -59,13 +64,13 @@ const Contact = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                {contactText.name}
+                {t('contact.name')}
               </label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                placeholder={contactText.name}
+                placeholder={t('contact.name')}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -77,13 +82,13 @@ const Contact = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                {contactText.email}
+                {t('contact.email')}
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder={contactText.email}
+                placeholder={t('contact.email')}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -95,13 +100,13 @@ const Contact = () => {
                 htmlFor="issue"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                {contactText.issue}
+                {t('contact.issue')}
               </label>
               <input
                 type="text"
                 name="issue"
                 id="issue"
-                placeholder={contactText.issue}
+                placeholder={t('contact.issue')}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
               />
@@ -113,7 +118,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               >
-                {contactText.message}
+                {t('contact.message')}
               </label>
               <textarea
                 name="message"
@@ -130,7 +135,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full px-6 py-3 rounded-lg cursor-pointer bg-blue-500 text-white font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200"
               >
-                {contactText.send}
+                {t('contact.send')}
               </button>
             </div>
 
@@ -142,7 +147,7 @@ const Contact = () => {
       </div>
 
       <Notification
-        message="¡Tu mensaje se ha enviado con éxito!"
+        message={t('contact.notification')}
         isVisible={showNotification}
         onClose={() => setShowNotification(false)}
       />

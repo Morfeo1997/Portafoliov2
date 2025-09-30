@@ -242,7 +242,8 @@ export const LanguageProvider = ({ children }) => {
         email: 'Email',
         issue: 'Asunto',
         message: 'Mensaje',
-        send: 'Enviar Mensaje'
+        send: 'Enviar Mensaje',
+        notification: '¡Tu mensaje se ha enviado con éxito!'
       },
       footer: {
         // ... textos del footer
@@ -438,7 +439,8 @@ export const LanguageProvider = ({ children }) => {
         email: 'Email',
         issue: 'Issue',
         message: 'Message',
-        send: 'Send Message'
+        send: 'Send Message',
+        notification: '¡Your message has been sent succesfully!'
       },
       footer: {
         // ... textos del footer en inglés
