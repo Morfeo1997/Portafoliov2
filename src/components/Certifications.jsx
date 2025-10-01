@@ -1,34 +1,12 @@
-const Certifications = () => {
- 
-    const certifications = [
-      {
-        name: "Certificado de Ingles, de EFSET",
-        link: "https://cert.efset.org/zJSnSy"
-      },
-      {
-        name: "Diseño web Responsivo, de Freecodecamp",
-        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/responsive-web-design"
-      },
-      {
-        name: "Javascript y estructura de datos, de Freecodecamp",
-        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/javascript-algorithms-and-data-structures-v8"
-      }
-    ];
+import { useLanguage } from '../contexts/LanguageContext';
 
-    const certificationsEn = [
-      {
-        name: "EFSET, English Certification",
-        link: "https://cert.efset.org/zJSnSy"
-      },
-      {
-        name: "Freecodecamp, Responsive web design",
-        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/responsive-web-design"
-      },
-      {
-        name: "Freecodecamp, Javascript and data structure",
-        link: "https://freecodecamp.org/espanol/certification/ElMorfeo97/javascript-algorithms-and-data-structures-v8"
-      }
-    ];
+const Certifications = () => {
+
+  const { t } = useLanguage();
+
+  const certifications = t('certificates.certifications');
+ 
+
   
     return (
       <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -37,7 +15,7 @@ const Certifications = () => {
             Certificaciones
           </h2>
           <div className="grid gap-6 max-w-3xl mx-auto">
-            {certifications.map((cert, index) => (
+            {certifications && certifications.map((cert, index) => (
               <a
                 key={index}
                 href={cert.link}

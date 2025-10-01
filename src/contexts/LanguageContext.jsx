@@ -416,7 +416,7 @@ export const LanguageProvider = ({ children }) => {
           ]
       },
       certificates: {
-        certificationsEn : [
+        certifications : [
       {
         name: "EFSET, English Certification",
         link: "https://cert.efset.org/zJSnSy"
