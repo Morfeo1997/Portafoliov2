@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const SkillCard = ({ name, level, icon, description, experience }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const { t } = useLanguage();
 
   const handleCardInteraction = (e) => {
     e.preventDefault();
@@ -11,11 +14,11 @@ const SkillCard = ({ name, level, icon, description, experience }) => {
   // Función para convertir el nivel numérico a texto
   const getLevelText = (level) => {
     const levels = {
-      1: 'Básico',
-      2: 'Competente', 
-      3: 'Intermedio',
-      4: 'Avanzado',
-      5: 'Experto'
+      1: t('skills.level.1'),
+      2: t('skills.level.2'),
+      3: t('skills.level.3'),
+      4: t('skills.level.4'),
+      5: t('skills.level.5')
     };
     return levels[level] || 'Sin definir';
   };
@@ -85,7 +88,7 @@ const SkillCard = ({ name, level, icon, description, experience }) => {
             
             {experience && (
               <div className="mb-3">
-                <span className="text-white/80 text-xs uppercase tracking-wide">Experiencia</span>
+                <span className="text-white/80 text-xs uppercase tracking-wide">{t('skills.exp')}</span>
                 <p className="text-white font-medium text-sm">{experience}</p>
               </div>
             )}
@@ -104,7 +107,7 @@ const SkillCard = ({ name, level, icon, description, experience }) => {
             }}
             className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300 backdrop-blur-sm"
           >
-            ← Volver
+            ← {t('skills.return')}
           </button>
         </div>
       </div>

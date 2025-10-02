@@ -91,6 +91,15 @@ export const LanguageProvider = ({ children }) => {
         ]
       },
       skills: {
+        level:{
+          '1': 'Básico',
+          '2': 'Competente', 
+          '3': 'Intermedio',
+          '4': 'Avanzado',
+          '5': 'Experto'
+        },
+        exp: 'Experiencia',
+        return: 'Volver',
         skills: [
             { 
               name: 'React', 
@@ -290,6 +299,15 @@ export const LanguageProvider = ({ children }) => {
         ]
       },
       skills: {
+        level:{
+          '1': 'Basic',
+          '2': 'Proficient', 
+          '3': 'Intermediate',
+          '4': 'Advanced',
+          '5': 'Expert'
+        },
+        exp: 'Experience',
+        return: 'Return',
         skills: [
             { 
               name: 'React', 
