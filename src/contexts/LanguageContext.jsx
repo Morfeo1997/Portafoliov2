@@ -161,6 +161,12 @@ export const LanguageProvider = ({ children }) => {
         // ... más textos
       },
       projects: {
+        title: 'Mis Proyectos',
+        headline1: 'Proyectos Simples',
+        headline2: 'Proyectos Intermedios',
+        cardFrontBtn: 'Click para ver más',
+        cardBackBtn1: 'Ver Proyecto',
+        cardBackBtn2: 'Volver',
         simpleProjects : [
             {
               title: "Calculadora",
@@ -370,6 +376,12 @@ export const LanguageProvider = ({ children }) => {
           ]
       },
       projects: {
+        title: 'My Projects',
+        headline1: 'Simple Projects',
+        headline2: 'Intermediate Projects',
+        cardFrontBtn: 'Click to see more',
+        cardBackBtn1: 'Go to project',
+        cardBackBtn2: 'Return',
         simpleProjects : [
             {
               title: "Calculator",

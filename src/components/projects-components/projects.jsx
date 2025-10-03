@@ -1,99 +1,26 @@
 import ProjectCard from './projectCard';
-import SimpleImage1 from '../../assets/images/project-images/simple-projects/project-1.jpg'
-import SimpleImage2 from '../../assets/images/project-images/simple-projects/project-2.jpg'
-import SimpleImage3 from '../../assets/images/project-images/simple-projects/project-3.jpg'
-import SimpleImage4 from '../../assets/images/project-images/simple-projects/project-4.jpg'
-import SimpleImage5 from '../../assets/images/project-images/simple-projects/project-5.jpg'
-
-import IntermediumImage1 from '../../assets/images/project-images/intermedium-projects/project-1.jpg'
-import IntermediumImage2 from '../../assets/images/project-images/intermedium-projects/project-2.jpg'
-import IntermediumImage3 from '../../assets/images/project-images/intermedium-projects/project-3.jpg' 
-import IntermediumImage4 from '../../assets/images/project-images/intermedium-projects/project-4.jpg' 
-import IntermediumImage5 from '../../assets/images/project-images/intermedium-projects/project-5.jpg' 
-
-
+import { useLanguage } from '../../contexts/LanguageContext';
 
 
 
 const Projects = () => {
-  
-  const simpleProjects = [
-    {
-      title: "Calculadora",
-      image: SimpleImage1,
-      tools: ["HTML", "CSS", "JavaScript"],
-      link: "https://morfeo1997-calculator.netlify.app/"
-    },
-    {
-      title: "Maquina de Aforismos",
-      image: SimpleImage2,
-      tools: ["HTML", "CSS", "JavaScript", "React"],
-      link: "https://el-metodo-pascal-morfeo1997.netlify.app/"
-    },
-    {
-      title: "Landing Page",
-      image: SimpleImage3,
-      tools: ["HTML", "CSS"],
-      link: "https://huddle-landing-page-morfeo1997.netlify.app/"
-    },
-        {
-      title: "TODO App (with dark mode)",
-      image: SimpleImage4,
-      tools: ["HTML", "Javascript", "React", "Tailwindcss"],
-      link: "https://f-e-m-todo-app.netlify.app/"
-    },
-            {
-      title: "Rock Paper Scissors (with 2 difficults) app",
-      image: SimpleImage5,
-      tools: ["HTML", "Javascript", "React", "Tailwindcss"],
-      link: "https://rock-paper-scissor-morfeo1997.netlify.app/"
-    }
-  ];
 
-  const intermediateProjects = [
-    {
-      title: "E-commerce",
-      image: IntermediumImage1,
-      tools: ["HTML", "CSS", "Javascript"],
-      link: "https://morfeo1997-e-commerce.netlify.app/"
-    },
-    {
-      title: "Wallex (app tipo fintech)",
-      image: IntermediumImage2,
-      tools: ["React", "Tailwind", "Springboot"],
-      link: "https://github.com/No-Country-simulation/s21-02-ft-webapp"
-    },
-    {
-      title: "Playclass",
-      image: IntermediumImage3,
-      tools: ["React", "Tailwind"],
-      link: "https://github.com/No-Country-simulation/s19-13-ft-webapp/tree/dev"
-    },
-        {
-      title: "REST-API-Countries",
-      image: IntermediumImage4,
-      tools: ["React", "Tailwind"],
-      link: "https://fm-rest-country.netlify.app/"
-    },
-    {
-      title: "10 Preguntas",
-      image: IntermediumImage5,
-      tools: ["React", "Tailwind"],
-      link: "https://10-preguntas.netlify.app/"
-    }
-  ];
+  const { t } = useLanguage();
+  
+  const simpleProjects = t('projects.simpleProjects');
+  const intermediateProjects = t('projects.intermediateProjects');
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-16">
-          Mis Proyectos
+          {t('projects.title')}
         </h2>
 
         {/* Simple Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
-            Proyectos Simples
+            {t('projects.headline1')}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {simpleProjects.map((project, index) => (
@@ -105,7 +32,7 @@ const Projects = () => {
         {/* Intermediate Projects */}
         <div>
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
-            Proyectos Intermedios
+            {t('projects.headline2')}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {intermediateProjects.map((project, index) => (

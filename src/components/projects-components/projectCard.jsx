@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ProjectCard = ({ title, image, tools, link }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const {t} = useLanguage();
 
   const handleCardInteraction = (e) => {
     e.preventDefault();
@@ -35,7 +38,7 @@ const ProjectCard = ({ title, image, tools, link }) => {
             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-black/60 backdrop-blur-sm rounded-lg p-3">
                 <h3 className="text-lg font-bold text-white truncate">{title}</h3>
-                <p className="text-sm text-gray-300">Click para ver más</p>
+                <p className="text-sm text-gray-300">{t('projects.cardFrontBtn')}</p>
               </div>
             </div>
           </div>
@@ -66,7 +69,7 @@ const ProjectCard = ({ title, image, tools, link }) => {
                 onTouchStart={(e) => e.stopPropagation()}
                 onClick={(e) => e.stopPropagation()}
               >
-                Ver Proyecto
+                {t('projects.cardBackBtn1')}
               </a>
               
               <button
@@ -80,7 +83,7 @@ const ProjectCard = ({ title, image, tools, link }) => {
                 }}
                 className="bg-gray-600 cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-700 transition-colors duration-300"
               >
-                ← Volver
+                ← {t('projects.cardBackBtn2')}
               </button>
             </div>
           </div>
