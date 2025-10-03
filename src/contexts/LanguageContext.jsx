@@ -227,6 +227,8 @@ export const LanguageProvider = ({ children }) => {
           ]
       },
       certificates: {
+        title: 'Certificaciones',
+        goto: 'Ver Certificado',
         certifications : [
       {
         name: "Certificado de Ingles, de EFSET",
@@ -349,21 +351,21 @@ export const LanguageProvider = ({ children }) => {
               level: 3, // Intermedio
               icon: PythonIcon,
               description: "I completed more than one course to learn it, and I find it a very comfortable language to work with.",
-              experience: '1+ años'
+              experience: '1+ years'
             },
             { 
               name: 'Git', 
               level: 4, // Avanzado
               icon: GitIcon,
               description: "The version control system for everyone, I learned how to use it and have used it for personal and team projects.",
-              experience: '3+ años'
+              experience: '3+ years'
             },
             { 
               name: 'Github', 
               level: 3, // Intermedio
               icon: GithubIcon,
               description: "It's the main page I use to store my code, and I've been using it for years.",
-              experience: '2+ años'
+              experience: '2+ years'
             }
           ]
       },
@@ -426,7 +428,7 @@ export const LanguageProvider = ({ children }) => {
               link: "https://fm-rest-country.netlify.app/"
             },
             {
-              title: "10 Preguntas",
+              title: "QA Game",
               image: IntermediumImage5,
               tools: ["React", "Tailwind"],
               link: "https://10-preguntas.netlify.app/"
@@ -434,6 +436,8 @@ export const LanguageProvider = ({ children }) => {
           ]
       },
       certificates: {
+        title: 'Certifications',
+        goto: 'Go to certificate',
         certifications : [
       {
         name: "EFSET, English Certification",
