@@ -7,34 +7,14 @@ const Contact = () => {
 
   const { t } = useLanguage();
 
-  const contact = t('contact')
+
 
   const handleSubmit = (e) => {
     {/* Manejo del envio de notificaciones */}
     setShowNotification(true);
   };
 
-  const contactText = {
-    headline: 'Contacto',
-    head1: 'Si tienes interés en contactarme para ayudarte en un proyecto',
-    head2: 'puedes llenar el formulario y yo te responderé lo más rápido que pueda.',
-    name: 'Nombre',
-    email: 'Email',
-    issue: 'Asunto',
-    message: 'Mensaje',
-    send: 'Enviar Mensaje'
-  };
 
-  const contactTextEn = {
-    headline: 'Contact',
-    head1: 'If you are interested in contacting me to help you with a project',
-    head2: "you can fill the form and I'll answer you as fast as I can.",
-    name: 'Name',
-    email: 'Email',
-    issue: 'Issue',
-    message: 'Message',
-    send: 'Send Message'
-  };
 
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-800">
