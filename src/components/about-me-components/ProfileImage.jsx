@@ -7,11 +7,13 @@ import Img5 from '../../assets/images/profile-images/profile-5.png'
 import Img6 from '../../assets/images/profile-images/profile-6.png'
 import Img7 from '../../assets/images/profile-images/profile-7.png'
 import Img8 from '../../assets/images/profile-images/profile-8.png'
+import Img9 from '../../assets/images/profile-images/profile-9.png'
 
 
 const ProfileImage = () => {
   
   const images = [
+  	Img9,
     Img8,
     Img7,
     Img2,
