@@ -10,6 +10,9 @@ import TailwindIcon from '../assets/icons/tailwindcss.png'
 import PythonIcon from '../assets/icons/python.png'
 import GitIcon from '../assets/icons/git.svg'
 import GithubIcon from '../assets/icons/github.svg'
+import TypeScryptIcon from '../assets/icons/typescript.svg'
+import NodeJsIcon from '../assets/icons/nodejs.svg'
+import NextIcon from '../assets/icons/nextjs.svg'
 
 import SimpleImage1 from '../assets/images/project-images/simple-projects/project-1.jpg'
 import SimpleImage2 from '../assets/images/project-images/simple-projects/project-2.jpg'
@@ -141,6 +144,27 @@ export const LanguageProvider = ({ children }) => {
               level: 3, // Intermedio
               icon: PythonIcon,
               description: 'Complete mas de un curso para aprenderlo y me parece un lenguaje muy comodo para trabajar.',
+              experience: '1+ años'
+            },
+            { 
+              name: 'Typescript', 
+              level: 3, // Intermedio
+              icon: TypeScryptIcon,
+              description: 'Complete mas de un curso para aprenderlo y lo he utilizado para distintos proyectos, me parece muy seguro para trabajar.',
+              experience: '1+ años'
+            },
+            { 
+              name: 'Nodejs', 
+              level: 3, // Intermedio
+              icon: NodeJsIcon,
+              description: 'Complete mas de un curso para aprenderlo y lo he utilizado para hacer distintas pruebas y manejar servidores basicos',
+              experience: '2+ años'
+            },
+            { 
+              name: 'Nextjs', 
+              level: 3, // Intermedio
+              icon: NextIcon,
+              description: 'Lo he utilizado para distintos proyectos, me parece una gran herramienta para el entorno de React',
               experience: '1+ años'
             },
             { 
@@ -357,6 +381,27 @@ export const LanguageProvider = ({ children }) => {
               level: 3, // Intermedio
               icon: PythonIcon,
               description: "I completed more than one course to learn it, and I find it a very comfortable language to work with.",
+              experience: '1+ years'
+            },
+             { 
+              name: 'Typescript', 
+              level: 3, // Intermedio
+              icon: TypeScryptIcon,
+              description: 'I completed more than one course to learn it and I\'ve used it for different projects, I think it\'s very safe to work with.',
+              experience: '1+ years'
+            },
+            { 
+              name: 'Nodejs', 
+              level: 3, // Intermedio
+              icon: NodeJsIcon,
+              description: 'I completed more than one course to learn it and I\'ve used it to perform various tests and manage basic servers.',
+              experience: '2+ years'
+            },
+            { 
+              name: 'Nextjs', 
+              level: 3, // Intermedio
+              icon: NextIcon,
+              description: 'I\'ve used it for various projects, and I think it\'s a great tool for the React environment.',
               experience: '1+ years'
             },
             { 
