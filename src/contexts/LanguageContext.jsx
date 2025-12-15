@@ -1,6 +1,5 @@
 // src/contexts/LanguageContext.jsx
 import { createContext, useContext, useState, useEffect } from 'react';
-import { FiMenu, FiSun, FiMoon } from 'react-icons/fi';
 
 import ReactIcon from '../assets/icons/react.svg';
 import JavascriptIcon from '../assets/icons/javascript.svg'
@@ -24,7 +23,8 @@ import IntermediumImage2 from '../assets/images/project-images/intermedium-proje
 import IntermediumImage3 from '../assets/images/project-images/intermedium-projects/project-3.jpg' 
 import IntermediumImage4 from '../assets/images/project-images/intermedium-projects/project-4.jpg' 
 import IntermediumImage5 from '../assets/images/project-images/intermedium-projects/project-5.jpg' 
-
+import IntermediumImage6 from '../assets/images/project-images/intermedium-projects/project-6.jpeg' 
+import IntermediumImage7 from '../assets/images/project-images/intermedium-projects/project-7.png' 
 
 const LanguageContext = createContext();
 
@@ -253,6 +253,18 @@ export const LanguageProvider = ({ children }) => {
               image: IntermediumImage5,
               tools: ["React", "Tailwind"],
               link: "https://10-preguntas.netlify.app/"
+            },
+            {
+              title: "Pyfin",
+              image: IntermediumImage6,
+              tools: ["React", "Tailwind"],
+              link: "https://pyfin-nocountry.vercel.app/"
+            },
+            {
+              title: "TestiGo",
+              image: IntermediumImage7,
+              tools: ["Typescript", "Tailwind", "Nextjs"],
+              link: "https://nocountry-cms-zeta.vercel.app/"
             }
           ]
       },
@@ -489,6 +501,18 @@ export const LanguageProvider = ({ children }) => {
               image: IntermediumImage5,
               tools: ["React", "Tailwind"],
               link: "https://10-preguntas.netlify.app/"
+            },
+            {
+              title: "Pyfin",
+              image: IntermediumImage6,
+              tools: ["React", "Tailwind"],
+              link: "https://pyfin-nocountry.vercel.app/"
+            },
+            {
+              title: "TestiGo",
+              image: IntermediumImage7,
+              tools: ["Typescript", "Tailwind", "Nextjs"],
+              link: "https://nocountry-cms-zeta.vercel.app/"
             }
           ]
       },
