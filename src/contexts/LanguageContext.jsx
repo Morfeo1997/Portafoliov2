@@ -25,6 +25,7 @@ import IntermediumImage4 from '../assets/images/project-images/intermedium-proje
 import IntermediumImage5 from '../assets/images/project-images/intermedium-projects/project-5.jpg' 
 import IntermediumImage6 from '../assets/images/project-images/intermedium-projects/project-6.jpeg' 
 import IntermediumImage7 from '../assets/images/project-images/intermedium-projects/project-7.png' 
+import IntermediumImage8 from '../assets/images/project-images/intermedium-projects/project-8.jpg'
 
 const LanguageContext = createContext();
 
@@ -265,6 +266,12 @@ export const LanguageProvider = ({ children }) => {
               image: IntermediumImage7,
               tools: ["Typescript", "Tailwind", "Nextjs"],
               link: "https://nocountry-cms-zeta.vercel.app/"
+            },
+            {
+              title: "Roguelike",
+              image: IntermediumImage8,
+              tools: ["Typescript", "Phaser",],
+              link: "https://roguelike-phaser.netlify.app/"
             }
           ]
       },
@@ -513,6 +520,12 @@ export const LanguageProvider = ({ children }) => {
               image: IntermediumImage7,
               tools: ["Typescript", "Tailwind", "Nextjs"],
               link: "https://nocountry-cms-zeta.vercel.app/"
+            },
+            {
+              title: "Roguelike",
+              image: IntermediumImage8,
+              tools: ["Typescript", "Phaser",],
+              link: "https://roguelike-phaser.netlify.app/"
             }
           ]
       },
