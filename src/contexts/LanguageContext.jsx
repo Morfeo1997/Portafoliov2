@@ -18,6 +18,7 @@ import SimpleImage2 from '../assets/images/project-images/simple-projects/projec
 import SimpleImage3 from '../assets/images/project-images/simple-projects/project-3.jpg'
 import SimpleImage4 from '../assets/images/project-images/simple-projects/project-4.jpg'
 import SimpleImage5 from '../assets/images/project-images/simple-projects/project-5.jpg'
+import SimpleImage6 from '../assets/images/project-images/simple-projects/project-6.jpg'
 import IntermediumImage1 from '../assets/images/project-images/intermedium-projects/project-1.jpg'
 import IntermediumImage2 from '../assets/images/project-images/intermedium-projects/project-2.jpg'
 import IntermediumImage3 from '../assets/images/project-images/intermedium-projects/project-3.jpg' 
@@ -222,6 +223,12 @@ export const LanguageProvider = ({ children }) => {
               image: SimpleImage5,
               tools: ["HTML", "Javascript", "React", "Tailwindcss"],
               link: "https://rock-paper-scissor-morfeo1997.netlify.app/"
+            },
+            {
+              title: "Escape Ball",
+              image: SimpleImage6,
+              tools: ["React", "GSAP", "Tailwindcss"],
+              link: "https://escape-ball-morfeo1997.netlify.app/"
             }
           ],
         intermediateProjects : [
@@ -476,6 +483,12 @@ export const LanguageProvider = ({ children }) => {
               image: SimpleImage5,
               tools: ["HTML", "Javascript", "React", "Tailwindcss"],
               link: "https://rock-paper-scissor-morfeo1997.netlify.app/"
+            },
+            {
+              title: "Escape Ball",
+              image: SimpleImage6,
+              tools: ["React", "GSAP", "Tailwindcss"],
+              link: "https://escape-ball-morfeo1997.netlify.app/"
             }
           ],
         intermediateProjects : [
