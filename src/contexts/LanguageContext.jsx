@@ -12,6 +12,7 @@ import GithubIcon from '../assets/icons/github.svg'
 import TypeScryptIcon from '../assets/icons/typescript.svg'
 import NodeJsIcon from '../assets/icons/nodejs.svg'
 import NextIcon from '../assets/icons/nextjs.svg'
+import AngularIcon from '../assets/icons/angular.svg'
 
 import SimpleImage1 from '../assets/images/project-images/simple-projects/project-1.jpg'
 import SimpleImage2 from '../assets/images/project-images/simple-projects/project-2.jpg'
@@ -170,6 +171,13 @@ export const LanguageProvider = ({ children }) => {
               experience: '1+ años'
             },
             { 
+              name: 'Angular', 
+              level: 3, // Intermedio
+              icon: AngularIcon,
+              description: 'He realizado cursos y pequeños proyectos utilizandolo, me parece una gran herramienta para proyectos profesionales por su seguridad y por las herramientas propias que posee.',
+              experience: '1+ años'
+            },
+            { 
               name: 'Git', 
               level: 4, // Avanzado
               icon: GitIcon,
@@ -235,8 +243,8 @@ export const LanguageProvider = ({ children }) => {
             {
               title: "E-commerce",
               image: IntermediumImage1,
-              tools: ["HTML", "CSS", "Javascript"],
-              link: "https://morfeo1997-e-commerce.netlify.app/"
+              tools: ["Angular", "Tailwindcss"],
+              link: "https://e-commerce-frontend-mentor.netlify.app/"
             },
             {
               title: "Wallex (app tipo fintech)",
@@ -431,6 +439,13 @@ export const LanguageProvider = ({ children }) => {
               experience: '1+ years'
             },
             { 
+              name: 'Angular', 
+              level: 3, // Intermedio
+              icon: AngularIcon,
+              description: 'I have used it for courses and small projects, and I find it to be a great tool for professional projects because of its security and the tools it has.',
+              experience: '1+ years'
+            },
+            { 
               name: 'Git', 
               level: 4, // Avanzado
               icon: GitIcon,
@@ -495,8 +510,8 @@ export const LanguageProvider = ({ children }) => {
             {
               title: "E-commerce",
               image: IntermediumImage1,
-              tools: ["HTML", "CSS", "Javascript"],
-              link: "https://morfeo1997-e-commerce.netlify.app/"
+              tools: ["Angular", "Tailwindcss"],
+              link: "https://e-commerce-frontend-mentor.netlify.app/"
             },
             {
               title: "Wallex (Fintech app)",
