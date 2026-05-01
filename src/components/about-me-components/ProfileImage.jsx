@@ -15,13 +15,7 @@ const ProfileImage = () => {
   const images = [
   	Img9,
     Img8,
-    Img7,
     Img2,
-    Img3,
-    Img4,
-    Img6,
-    Img5,
-    Img1,
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

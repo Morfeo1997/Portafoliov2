@@ -33,7 +33,7 @@ const Contact = () => {
 
           {/* Formulario de contacto */}
           <form 
-            action="https://formsubmit.co/gastongomez2014@hotmail.com"
+            action="https://formsubmit.co/gastongomezdev@gmail.com"
             method="POST"
             onSubmit={handleSubmit}
             className="space-y-6"
