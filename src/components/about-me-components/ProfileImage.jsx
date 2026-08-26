@@ -14,7 +14,6 @@ const ProfileImage = () => {
   
   const images = [
   	Img9,
-    Img8,
     Img2,
   ];
 

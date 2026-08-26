@@ -359,7 +359,7 @@ export const LanguageProvider = ({ children }) => {
         name: "Gastón Federico Nahuel Gómez",
         role: "Front-end Developer",
         description:
-          "I am a junior programmer with work experience specializing in front-end development.",
+          "I am a mid level programmer with work experience specializing in front-end development.",
         faqTitle: "Frequently Asked Questions",
         faqs: [
           {
