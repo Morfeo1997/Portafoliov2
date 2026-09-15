@@ -1,4 +1,3 @@
-// src/contexts/LanguageContext.jsx
 import { createContext, useContext, useState, useEffect } from "react";
 
 import ReactIcon from "../assets/icons/react.svg";
