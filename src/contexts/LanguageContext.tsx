@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
+import type { ReactNode } from "react";
 
 import ReactIcon from "../assets/icons/react.svg";
 import JavascriptIcon from "../assets/icons/javascript.svg";
@@ -32,7 +33,7 @@ interface LanguageContextType {
   language: 'es' | 'en';
   setLanguage: (lang: 'es' | 'en') => void;
   toggleLanguage: () => void;
-  t: (key: string) => string;
+  t: (key: string) => any;
   isSpanish: boolean;
   isEnglish: boolean;
 }
@@ -639,22 +640,22 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   };
 
   // Función para obtener traducciones usando notación de puntos
-  const t = (key: string): string => {
-    const keys = key.split(".");
-    let result = translations[language];
+  const t = (key: string): any => {
+  const keys = key.split(".");
+  let result: any = translations[language];
 
-    for (const k of keys) {
-      result = result?.[k];
-      if (result === undefined) {
-        console.warn(
-          `Translation key "${key}" not found for language "${language}"`,
-        );
-        return key; // Devolver la clave si no se encuentra traducción
-      }
+  for (const k of keys) {
+    result = result?.[k];
+    if (result === undefined) {
+      console.warn(
+        `Translation key "${key}" not found for language "${language}"`,
+      );
+      return key;
     }
+  }
 
-    return result;
-  };
+  return result;
+};
 
   const value = {
     language,
