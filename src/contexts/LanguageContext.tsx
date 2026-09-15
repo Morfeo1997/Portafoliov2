@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 import ReactIcon from "../assets/icons/react.svg";
 import JavascriptIcon from "../assets/icons/javascript.svg";
@@ -28,7 +28,16 @@ import IntermediumImage6 from "../assets/images/project-images/intermedium-proje
 import IntermediumImage7 from "../assets/images/project-images/intermedium-projects/project-7.png";
 import IntermediumImage8 from "../assets/images/project-images/intermedium-projects/project-8.jpg";
 
-const LanguageContext = createContext();
+interface LanguageContextType {
+  language: 'es' | 'en';
+  setLanguage: (lang: 'es' | 'en') => void;
+  toggleLanguage: () => void;
+  t: (key: string) => string;
+  isSpanish: boolean;
+  isEnglish: boolean;
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
@@ -38,11 +47,11 @@ export const useLanguage = () => {
   return context;
 };
 
-export const LanguageProvider = ({ children }) => {
+export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Recuperar idioma del localStorage o usar español por defecto
-  const [language, setLanguage] = useState(() => {
-    const savedLanguage = localStorage.getItem("portfolio-language");
-    return savedLanguage || "es";
+  	const [language, setLanguage] = useState<'es' | 'en'>(() => {
+  	const savedLanguage = localStorage.getItem("portfolio-language");
+  	return (savedLanguage as 'es' | 'en') || "es";
   });
 
   // Guardar en localStorage cuando cambie el idioma
@@ -630,7 +639,7 @@ export const LanguageProvider = ({ children }) => {
   };
 
   // Función para obtener traducciones usando notación de puntos
-  const t = (key) => {
+  const t = (key: string): string => {
     const keys = key.split(".");
     let result = translations[language];
 

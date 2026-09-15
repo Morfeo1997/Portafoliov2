@@ -1,5 +1,12 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { FiGlobe } from 'react-icons/fi';
+import { createContext, useContext, useState, ReactNode } from 'react';
+
+interface LanguageContextType {
+  language: 'es' | 'en';
+  setLanguage: (lang: 'es' | 'en') => void;
+  isSpanish: boolean;
+}
 
 const LanguageSelector = () => {
   const { language, setLanguage, isSpanish } = useLanguage();
