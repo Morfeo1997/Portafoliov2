@@ -2,9 +2,14 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const Certifications = () => {
 
+  interface Certification {
+  	name: string;
+  	link: string;
+	}
+	
   const { t } = useLanguage();
 
-  const certifications = t('certificates.certifications');
+  const certifications = t('certificates.certifications') as Certification[];
  
 
   
