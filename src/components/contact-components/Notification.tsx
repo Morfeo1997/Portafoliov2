@@ -1,6 +1,12 @@
 import { useEffect } from 'react';
 
-const Notification = ({ message, isVisible, onClose }) => {
+interface NotificationProps {
+  message: string;
+  isVisible: boolean;
+  onClose: () => void;
+}
+
+const Notification = ({ message, isVisible, onClose }: NotificationProps) => {
   useEffect(() => {
     if (isVisible) {
       const timer = setTimeout(() => {
