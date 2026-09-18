@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { LanguageProvider } from './contexts/LanguageContext'
 import Navbar from './components/Navbar'
 import AboutMe from './components/about-me-components/about-me'
@@ -9,7 +8,7 @@ import Certifications from './components/Certifications'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <LanguageProvider>

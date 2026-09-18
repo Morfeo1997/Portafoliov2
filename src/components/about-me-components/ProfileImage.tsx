@@ -1,23 +1,15 @@
 import { useState } from 'react';
-import Img1 from '../../assets/images/profile-images/profile-1.png'
 import Img2 from '../../assets/images/profile-images/profile-2.jpeg'
-import Img3 from '../../assets/images/profile-images/profile-3.png'
-import Img4 from '../../assets/images/profile-images/profile-4.png'
-import Img5 from '../../assets/images/profile-images/profile-5.png'
-import Img6 from '../../assets/images/profile-images/profile-6.png'
-import Img7 from '../../assets/images/profile-images/profile-7.png'
-import Img8 from '../../assets/images/profile-images/profile-8.png'
 import Img9 from '../../assets/images/profile-images/profile-9.png'
-
 
 const ProfileImage = () => {
   
-  const images = [
+  const images: string[] = [
   	Img9,
     Img2,
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => 

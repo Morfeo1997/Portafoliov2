@@ -1,18 +1,22 @@
-// src/components/about-me/About-me.jsx
 import { useState } from 'react';
 import ProfileImage from './ProfileImage';
 import { useLanguage } from '../../contexts/LanguageContext';
 
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
 const AboutMe = () => {
   const { t } = useLanguage();
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const toggleFaq = (index) => {
-    setOpenFaq(openFaq === index ? null : index);
+  const toggleFaq = (index: number) => {
+	setOpenFaq(openFaq === index ? null : index);
   };
 
   // Obtenemos las FAQs del contexto de idiomas
-  const faqs = t('about.faqs');
+  const faqs = t('about.faqs') as FAQ[];
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-800">
