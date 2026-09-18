@@ -1,11 +1,12 @@
 import SkillCard from './SkillCard';
 import { useLanguage } from '../../contexts/LanguageContext';
+import type { SkillCardProps } from './SkillCard';
 
 const Skills = () => {
 
   const { t } = useLanguage();
 
-  const skills = t('skills.skills');
+  const skills = t('skills.skills') as SkillCardProps[];
   // Skills data con nuevo sistema de niveles (1-5)
   
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
-interface SkillCardProps {
+export interface SkillCardProps {
   name: string;
   level: number;
   icon: string;
