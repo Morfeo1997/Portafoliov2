@@ -1,12 +1,19 @@
 import { useState } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
-const ProjectCard = ({ title, image, tools, link }) => {
+export interface ProjectCardProps {
+  title: string;
+  image: string;
+  tools: string[];
+  link: string;
+}
+
+const ProjectCard = ({ title, image, tools, link }: ProjectCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const {t} = useLanguage();
 
-  const handleCardInteraction = (e) => {
+  const handleCardInteraction = (e: React.SyntheticEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsFlipped(!isFlipped);
   };

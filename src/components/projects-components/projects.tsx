@@ -1,4 +1,5 @@
 import ProjectCard from './projectCard';
+import type { ProjectCardProps } from './projectCard';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 
@@ -7,8 +8,8 @@ const Projects = () => {
 
   const { t } = useLanguage();
   
-  const simpleProjects = t('projects.simpleProjects');
-  const intermediateProjects = t('projects.intermediateProjects');
+  const simpleProjects = t('projects.simpleProjects') as ProjectCardProps[];
+  const intermediateProjects = t('projects.intermediateProjects') as ProjectCardProps[];
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-800">
