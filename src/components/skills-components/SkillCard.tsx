@@ -1,37 +1,45 @@
 import { useState } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
-const SkillCard = ({ name, level, icon, description, experience }) => {
+interface SkillCardProps {
+  name: string;
+  level: number;
+  icon: string;
+  description: string;
+  experience: string;
+}
+
+const SkillCard = ({ name, level, icon, description, experience }: SkillCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const { t } = useLanguage();
 
-  const handleCardInteraction = (e) => {
+  const handleCardInteraction = (e: React.SyntheticEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsFlipped(!isFlipped);
   };
 
   // Función para convertir el nivel numérico a texto
-  const getLevelText = (level) => {
-    const levels = {
-      1: t('skills.level.1'),
-      2: t('skills.level.2'),
-      3: t('skills.level.3'),
-      4: t('skills.level.4'),
-      5: t('skills.level.5')
-    };
+  const getLevelText = (level: number): string => {
+   const levels: Record<number, string> = {
+  		1: t('skills.level.1'),
+  		2: t('skills.level.2'),
+  		3: t('skills.level.3'),
+  		4: t('skills.level.4'),
+  		5: t('skills.level.5')
+	};
     return levels[level] || 'Sin definir';
   };
 
   // Función para obtener el color según el nivel
-  const getLevelColor = (level) => {
-    const colors = {
-      1: 'bg-red-500',
-      2: 'bg-orange-500',
-      3: 'bg-yellow-500',
-      4: 'bg-green-500',
-      5: 'bg-blue-500'
-    };
+  const getLevelColor = (level: number): string => {
+    const colors: Record<number, string> = {
+  		1: 'bg-red-500',
+  		2: 'bg-orange-500',
+  		3: 'bg-yellow-500',
+  		4: 'bg-green-500',
+  		5: 'bg-blue-500'
+	};
     return colors[level] || 'bg-gray-500';
   };
 
