@@ -244,8 +244,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
           {
             title: "Landing Page",
             image: SimpleImage3,
-            tools: ["HTML", "CSS"],
-            link: "https://huddle-landing-page-morfeo1997.netlify.app/",
+            tools: ["Typescript", "Tailwindcss"],
+            link: "https://landing-collection.netlify.app",
           },
           {
             title: "TODO App (with dark mode)",
